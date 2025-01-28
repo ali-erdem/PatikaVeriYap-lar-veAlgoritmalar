@@ -1,0 +1,37 @@
+[16, 21, 11, 8, 12, 22] Dizisinin Merge Sort'a Göre Aşamaları
+Merge Sort, böl ve fethet mantığıyla çalışır. Diziyi sürekli ikiye böler ve sıralı bir şekilde birleştirir.
+
+Aşamalar:
+
+Bölme Aşamaları:
+Dizi: [16, 21, 11, 8, 12, 22]
+İlk bölme: [16, 21, 11] ve [8, 12, 22]
+İkinci bölme: [16], [21, 11] ve [8], [12, 22]
+Üçüncü bölme: [16], [21], [11] ve [8], [12], [22]
+
+Birleştirme Aşamaları:
+[16] ve [21, 11] birleştirilir:
+[21, 11] sıralanır: [11, 21]
+[16] ve [11, 21] birleştirilir: [11, 16, 21]
+[8] ve [12, 22] birleştirilir:
+[12, 22] zaten sıralı.
+[8] ve [12, 22] birleştirilir: [8, 12, 22]
+
+Son birleştirme: [11, 16, 21] ve [8, 12, 22] birleştirilir:
+[8, 11, 12, 16, 21, 22]
+Sonuç: [8, 11, 12, 16, 21, 22]
+
+Big-O Gösterimi
+Merge Sort'un Time Complexity (Zaman Karmaşıklığı):
+
+Worst Case: 
+O(nlogn)
+(Her durumda diziyi ikiye böler ve birleştirir.)
+
+Average Case: 
+O(nlogn)
+(Ortalama durumda da aynı mantıkla çalışır.)
+
+Best Case: 
+O(nlogn)
+(Dizi zaten sıralı olsa bile bölme ve birleştirme işlemleri yapılır.)
